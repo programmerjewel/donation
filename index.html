@@ -15,10 +15,10 @@
 </head>
 
 <body style="font-family: 'Lexend', sans-serif">
-  <div class="container mx-auto">
-    <nav class="sticky top-0">
-      <ul class="flex justify-between items-center">
-        <li><a href="" class="btn">Blog</a></li>
+
+    <nav class="sticky top-0 py-6 bg-[#F9F7F3]">
+      <div class="container mx-auto"><ul class="flex justify-between items-center">
+        <li><a href="" class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold">Blog</a></li>
         <li class="flex gap-4 items-center">
           <img src="./assets/logo.png" alt="" /><span class="text-[#111111] text-xl font-semibold">Donate
             Bangladesh</span>
@@ -27,8 +27,9 @@
           <img src="./assets/coin.png" alt="" /><span class="text-[#111111b3] text-xl font-medium">5500</span><span class="text-[#111111b3] text-xl font-medium">BDT</span>
         </li>
       </ul>
+    </div>
     </nav>
-    <section class="donation-section">
+    <section class="donation-section mt-20">
       <div class="container mx-auto flex gap-8 flex-col items-center">
         <div class="flex gap-4">
           <button class="btn text-xl font-semibold text-[#111111] bg-[#B4F461]">Donation</button>
@@ -54,9 +55,23 @@
               the lives of those in need.
             </p>
             <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-8 mb-4" />
-            <button class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
+            <button onclick="my_modal.showModal()" class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
               Donate Now
             </button>
+            <dialog id="my_modal" class="modal">
+              <div class="modal-box w-1/2 max-w-5xl mx-auto flex items-center flex-col">
+                <h3 class="text-5xl text-[#111111] font-bold">Congrats!</h3>
+                <img class="my-4" src="./assets/coin.png" alt="">
+                <p class="">You have donated for Humankind</p>
+                <p class="py-4 font-bold text-[#111111]">Successfully!</p>
+                <div class="modal-action">
+                  <form method="dialog">
+                    <!-- if there is a button, it will close the modal -->
+                    <button class="btn">Close</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
           </div>
         </div>
         <div class="flex gap-8 items-center border-gray-200 border rounded-xl p-8">
@@ -101,7 +116,7 @@
         </div>
       </div>
     </section>
-  </div>
+
   <script src="./main.js"></script>
 </body>
 
