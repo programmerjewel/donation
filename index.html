@@ -15,33 +15,36 @@
 </head>
 
 <body style="font-family: 'Lexend', sans-serif">
-
-    <nav class="sticky top-0 py-6 bg-[#F9F7F3]">
-      <div class="container mx-auto"><ul class="flex justify-between items-center">
+  <header class="sticky top-0 ">
+    <nav class="py-6 bg-[#F9F7F3]">
+      <div class="container mx-auto">
+        <ul class="flex justify-between items-center">
         <li><a href="" class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold">Blog</a></li>
         <li class="flex gap-4 items-center">
-          <img src="./assets/logo.png" alt="" /><span class="text-[#111111] text-xl font-semibold">Donate
+          <img src="./assets/logo.png" alt="logo" /><span class="text-[#111111] text-xl font-semibold">Donate
             Bangladesh</span>
         </li>
-        <li class="flex gap-3 items-center">
-          <img src="./assets/coin.png" alt="" /><span class="text-[#111111b3] text-xl font-medium">5500</span><span class="text-[#111111b3] text-xl font-medium">BDT</span>
+        <li class="flex gap-2 items-center">
+          <img src="./assets/coin.png" alt="coin" /><span id="total-amount" class="text-[#111111b3] text-xl font-medium">5500</span><span class="text-[#111111b3] text-xl font-medium">BDT</span>
         </li>
       </ul>
     </div>
     </nav>
+    <div class="backdrop-blur bg-white/80 flex justify-center gap-4 py-10">
+      <button class="btn text-xl font-semibold text-[#111111] bg-[#B4F461]">Donation</button>
+      <button class= "btn btn-outline text-xl font-medium text-[#111111b3] border-[#1111114d] border bg-none">History</button>
+    </div>
+  </header>
+
     <section class="donation-section mt-20">
       <div class="container mx-auto flex gap-8 flex-col items-center">
-        <div class="flex gap-4">
-          <button class="btn text-xl font-semibold text-[#111111] bg-[#B4F461]">Donation</button>
-          <button class= "btn btn-outline text-xl font-medium text-[#111111b3] border-[#1111114d] border bg-none">History</button>
-        </div>
         <div class="flex gap-8 items-center border-gray-200 border rounded-xl p-8">
           <figure>
             <img src="./assets/noakhali.png" alt="Noakhali Flood 2024" />
           </figure>
           <div class="w-1/2 flex flex-col">
             <div class="flex items-center gap-2">
-              <img src="./assets/coin.png" alt="" /><span id="" class="">0 <span>BDT</span></span>
+              <img src="./assets/coin.png" alt="coin" /><span id="noakhali-amount" class="">0<span>BDT</span></span>
             </div>
             <h2 class="my-4 text-[#111111] text-xl font-bold">
               Donate for Flood at Noakhali, Bangladesh
@@ -54,8 +57,8 @@
               supporting the relief efforts and making a positive impact on
               the lives of those in need.
             </p>
-            <input type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-8 mb-4" />
-            <button onclick="my_modal.showModal()" class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
+            <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mt-8 mb-4" />
+            <button id="noakhali-btn" class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
               Donate Now
             </button>
             <dialog id="my_modal" class="modal">
@@ -76,7 +79,7 @@
         </div>
         <div class="flex gap-8 items-center border-gray-200 border rounded-xl p-8">
           <figure>
-            <img src="./assets/feni.png" alt="Noakhali Flood 2024" />
+            <img src="./assets/feni.png" alt="Feni Flood 2024" />
           </figure>
           <div class="w-1/2 flex flex-col">
             <div class="flex items-center gap-2">
@@ -96,7 +99,7 @@
         </div>
         <div class="flex gap-8 items-center border-gray-200 border rounded-xl p-8">
           <figure>
-            <img src="./assets/quota-protest.png" alt="Noakhali Flood 2024" />
+            <img src="./assets/quota-protest.png" alt="Quota Protest 2024" />
           </figure>
           <div class="w-1/2 flex flex-col">
             <div class="flex items-center gap-2">

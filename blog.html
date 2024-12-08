@@ -2,35 +2,71 @@
 <html lang="en" data-theme="light">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Donation Bangladesh</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Donation Bangladesh</title>
 </head>
 
 <body style="font-family: 'Lexend', sans-serif">
 
-    <nav class="sticky top-0 py-6 bg-[#F9F7F3]">
-      <div class="container mx-auto"><ul class="flex justify-between items-center">
-        <li><a href="" class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold">Blog</a></li>
-        <li class="flex gap-4 items-center">
-          <img src="./assets/logo.png" alt="" /><span class="text-[#111111] text-xl font-semibold">Donate
-            Bangladesh</span>
-        </li>
-        <li class="flex gap-3 items-center">
-          <img src="./assets/coin.png" alt="" /><span class="text-[#111111b3] text-xl font-medium">5500</span><span class="text-[#111111b3] text-xl font-medium">BDT</span>
-        </li>
-      </ul>
-    </div>
-    </nav>
-    
+    <header class="sticky top-0 ">
+        <nav class="py-6 bg-[#F9F7F3]">
+          <div class="container mx-auto">
+            <ul class="flex justify-between items-center">
+            <li><a href="" class="btn bg-[#B4F461] text-[#111111] text-xl font-semibold">Blog</a></li>
+            <li class="flex gap-4 items-center">
+              <img src="./assets/logo.png" alt="" /><span class="text-[#111111] text-xl font-semibold">Donate
+                Bangladesh</span>
+            </li>
+            <li class="flex gap-3 items-center">
+              <img src="./assets/coin.png" alt="" /><span class="text-[#111111b3] text-xl font-medium">5500</span><span class="text-[#111111b3] text-xl font-medium">BDT</span>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      </header>
+    <section class="accordion">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-[#111]">Important FAQs</h2>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>DOM is essential for creating dynamic and interactive web pages. It provides a way for JavaScript to communicate with the HTML structure and manipulate it to achieve desired effects.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>To select an element from the DOM, you can use several methods provided by JavaScript-  getElementById(), getElementsByTagName(),getElementsByClassName(), querySelector(), and querySelectorAll()</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 border">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique where a single event listener is attached to a parent element to handle events on its child elements. This improves performance, handles dynamically added elements, and simplifies code by reducing the number of event listeners.</p>
+                </div>
+            </div>
+            
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>To manipulate an element's attributes and styles-setAttribute() and removeAttribute() to modify attributes like href, disabled, etc. To change inline styles, directly access the style property. For class-based styling, use classList.add(), classList.remove(), and classList.toggle(). By combining these methods, JS can dynamically alter the appearance and behavior of web elements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="./main.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>

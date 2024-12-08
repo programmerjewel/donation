@@ -1,7 +1,4 @@
-// truthy falsy js
-const burger = document.getElementById('burger');
-const navLinks = document.getElementById('navLinks');
 
-burger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+document.getElementById('noakhali-btn').addEventListener('click', function(){
+    parseFloat(document.getElementById('noakhali-input').value);
+})
