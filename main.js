@@ -72,6 +72,12 @@ function addHistory(amount, header){
 document.getElementById('n-btn').addEventListener('click', function(){
     donateCalculate('main-balance', 'n-input', 'n-amount', 'Support Noakhali Flood Relief Efforts, Bangladesh');
 });
+document.getElementById('f-btn').addEventListener('click', function(){
+    donateCalculate('main-balance', 'f-input', 'f-amount', 'Support Feni Flood Relief Efforts, Bangladesh');
+});
+document.getElementById('q-btn').addEventListener('click', function(){
+    donateCalculate('main-balance', 'q-input', 'q-amount', 'Aid of Injured in the Quota Movement, Bangladesh');
+});
 
 //go to blog.html page
 document.getElementById('blog-btn').addEventListener('click', function(){

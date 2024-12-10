@@ -43,6 +43,8 @@
 
   <section id="donate-section" class="mt-20">
     <div class="container mx-auto flex flex-col items-center">
+
+      <!-- noakhali-donation card -->
       <div class="flex flex-col md:flex-row gap-6 justify-between items-center border-gray-200 border rounded-xl p-6 md:p-8">
         <figure><img src="./assets/noakhali.png" alt="Noakhali Flood 2024" /></figure>
         <div class="md:w-1/2 flex flex-col">
@@ -67,22 +69,66 @@
           <button id="n-btn" class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
             Donate Now
           </button>
-          <!-- modal -->
-          <dialog id="my_modal" class="modal">
-            <div class="modal-box p-10 flex justify-center items-center flex-col">
-                <h3 class="text-2xl font-bold pb-3">Congratulations!</h3>
-                <img src="assets/coin.png" alt="">
-                <p class="py-4">Your Contribution Has Supported Humanity.</p>
-                <p class="text-lg font-bold">Successfully</p>
-                <div class="modal-action">
-                    <form method="dialog">
-                        <button class="btn bg-lime-300 hover:bg-black hover:text-white">Close Confirmation</button>
-                    </form>
-                </div>
-            </div>
-        </dialog>
         </div>
       </div>
+      <!-- feni-donation card -->
+      <div class="flex flex-col md:flex-row gap-6 justify-between items-center border-gray-200 border rounded-xl p-6 md:p-8">
+        <figure><img src="./assets/feni.png" alt="Feni Flood 2024" /></figure>
+        <div class="md:w-1/2 flex flex-col">
+          <div class="badge flex items-center gap-2 border-none bg-gray-100 px-4 py-6 rounded-lg">
+            <img src="./assets/coin.png" alt="coin" />
+            <span id="f-amount" class="text-[#111111b2] text-lg">300</span>
+            <span class="text-[#111111b2] text-lg">BDT</span>
+          </div>
+          <h2 class="my-4 text-[#111111] text-xl font-bold">
+            Donate for Flood Relief in Feni, Bangladesh
+          </h2>
+          <p class="text-[#111111b3] font-light">
+            The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+          </p>
+          <input id="f-input" type="number" placeholder="Write Donation Amount"
+            class="input input-bordered w-full mt-8 mb-4" />
+          <button id="f-btn" class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
+            Donate Now
+          </button>
+        </div>
+      </div>
+      <!-- quota-donation card -->
+      <div class="flex flex-col md:flex-row gap-6 justify-between items-center border-gray-200 border rounded-xl p-6 md:p-8">
+        <figure><img src="./assets/quota-protest.png" alt="Quota Protest 2024" /></figure>
+        <div class="md:w-1/2 flex flex-col">
+          <div class="badge flex items-center gap-2 border-none bg-gray-100 px-4 py-6 rounded-lg">
+            <img src="./assets/coin.png" alt="coin" />
+            <span id="q-amount" class="text-[#111111b2] text-lg">1000</span>
+            <span class="text-[#111111b2] text-lg">BDT</span>
+          </div>
+          <h2 class="my-4 text-[#111111] text-xl font-bold">
+            Aid for Injured in the Quota Movement
+          </h2>
+          <p class="text-[#111111b3] font-light">
+            The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+          </p>
+          <input id="q-input" type="number" placeholder="Write Donation Amount"
+            class="input input-bordered w-full mt-8 mb-4" />
+          <button id="q-btn" class="btn w-full text-xl font-semibold text-[#111111] bg-[#B4F461]" href="">
+            Donate Now
+          </button>
+        </div>
+      </div>
+      <!-- modal -->
+      <dialog id="my_modal" class="modal">
+        <div class="modal-box p-10 flex justify-center items-center flex-col">
+            <h3 class="text-2xl font-bold pb-3">Congratulations!</h3>
+            <img src="assets/coin.png" alt="">
+            <p class="py-4">Your Contribution Has Supported Humanity.</p>
+            <p class="text-lg font-bold">Successfully</p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <button class="btn bg-lime-300 hover:bg-black hover:text-white">Close Confirmation</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     </div>
   </section>
   <section id="history-section" class='container mx-auto'>
