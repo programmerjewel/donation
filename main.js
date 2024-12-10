@@ -74,6 +74,6 @@ document.getElementById('n-btn').addEventListener('click', function(){
 });
 
 //go to blog.html page
-function moveTopage(page){
-    window.location.href = './' + page;
-}
+document.getElementById('blog-btn').addEventListener('click', function(){
+   window.location.href = './blog.html'; 
+})

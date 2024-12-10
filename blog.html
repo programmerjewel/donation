@@ -34,34 +34,36 @@
       </header>
     <section class="accordion">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-[#111]">Important FAQs</h2>
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-                <div class="collapse-content">
-                    <p>DOM is essential for creating dynamic and interactive web pages. It provides a way for JavaScript to communicate with the HTML structure and manipulate it to achieve desired effects.</p>
+            <h2 class="text-3xl font-bold text-[#111] my-10 text-center">Important FAQs</h2>
+            <div class="flex flex-col gap-4">
+                <div class="collapse collapse-arrow border border-gray-300 rounded-lg">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-semibold text-[#111111]">What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p class="font-light">DOM is essential for creating dynamic and interactive web pages. It provides a way for JavaScript to communicate with the HTML structure and manipulate it to achieve desired effects.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-                <div class="collapse-content">
-                    <p>To select an element from the DOM, you can use several methods provided by JavaScript-  getElementById(), getElementsByTagName(),getElementsByClassName(), querySelector(), and querySelectorAll()</p>
+                <div class="collapse collapse-arrow border border-gray-300 rounded-lg">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-semibold text-[#111111]">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="font-light">To select an element from the DOM, you can use several methods provided by JavaScript-  getElementById(), getElementsByTagName(),getElementsByClassName(), querySelector(), and querySelectorAll()</p>
+                    </div>
                 </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200 border">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
-                <div class="collapse-content">
-                    <p>Event delegation is a technique where a single event listener is attached to a parent element to handle events on its child elements. This improves performance, handles dynamically added elements, and simplifies code by reducing the number of event listeners.</p>
+                <div class="collapse collapse-arrow border border-gray-300 rounded-lg">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-semibold text-[#111111]">What is event delegation in the context of the DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p class="font-light">Event delegation is a technique where a single event listener is attached to a parent element to handle events on its child elements. This improves performance, handles dynamically added elements, and simplifies code by reducing the number of event listeners.</p>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-                <div class="collapse-content">
-                    <p>To manipulate an element's attributes and styles-setAttribute() and removeAttribute() to modify attributes like href, disabled, etc. To change inline styles, directly access the style property. For class-based styling, use classList.add(), classList.remove(), and classList.toggle(). By combining these methods, JS can dynamically alter the appearance and behavior of web elements.</p>
+                
+                <div class="collapse collapse-arrow border border-gray-300 rounded-lg">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-semibold text-[#111111]">How do you manipulate an element's attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p class="font-light">To manipulate an element's attributes and styles-setAttribute() and removeAttribute() to modify attributes like href, disabled, etc. To change inline styles, directly access the style property. For class-based styling, use classList.add(), classList.remove(), and classList.toggle(). By combining these methods, JS can dynamically alter the appearance and behavior of web elements.</p>
+                    </div>
                 </div>
             </div>
         </div>
